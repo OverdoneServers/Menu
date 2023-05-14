@@ -5,15 +5,15 @@ MODULE.FolderName = "os_menu"
 
 MODULE.LoadLast = true
 
-OverdoneServers.OS_MENU = OverdoneServers.OS_MENU or {}
-MODULE.PublicVar = OverdoneServers.OS_MENU
-OverdoneServers.OS_MENU.Module = MODULE
+OverdoneServers.Menu = OverdoneServers.Menu or {}
+MODULE.PublicVar = OverdoneServers.Menu
+OverdoneServers.Menu.Module = MODULE
 
 MODULE.Hidden = true --If set to true, it wont show in the menu
 
 MODULE.DataToLoad = {
     Server = {
-        
+
     },
     Shared = {},
     Client = {
