@@ -18,6 +18,7 @@ MODULE.DataToLoad = {
     Shared = {},
     Client = {
         "menu.lua",
+        "debug_menu.lua"
     },
     Fonts = {
         {"MenuTitle", "sansation-light.ttf",
