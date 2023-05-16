@@ -3,11 +3,7 @@ local MODULE = {}
 MODULE.DisplayName = "OS: Menu"
 MODULE.FolderName = "os_menu"
 
-MODULE.LoadLast = true
-
-OverdoneServers.Menu = OverdoneServers.Menu or {}
-MODULE.PublicVar = OverdoneServers.Menu
-OverdoneServers.Menu.Module = MODULE
+-- MODULE.LoadLast = true -- May not be needed
 
 MODULE.Hidden = true --If set to true, it wont show in the menu
 
@@ -32,7 +28,7 @@ MODULE.DataToLoad = {
 }
 
 function MODULE:Start()
-    print("Sup")
+    print("OS Menu Module Started. Hello there!")
 end
 
 OverdoneServers:AddModule(MODULE)
