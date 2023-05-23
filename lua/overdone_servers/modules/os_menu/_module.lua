@@ -1,18 +1,14 @@
 local MODULE = {}
 
 MODULE.DisplayName = "OS: Menu"
-MODULE.FolderName = "os_menu"
-
--- MODULE.LoadLast = true -- May not be needed
 
 MODULE.Hidden = true --If set to true, it wont show in the menu
 
 MODULE.DataToLoad = {
-    Server = {
-
-    },
+    Server = {},
     Shared = {},
     Client = {
+        "materials.lua",
         "menu.lua",
         "debug_menu.lua"
     },
@@ -31,4 +27,4 @@ function MODULE:Start()
     print("OS Menu Module Started. Hello there!")
 end
 
-OverdoneServers:AddModule(MODULE)
+return MODULE

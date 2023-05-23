@@ -1,3 +1,6 @@
+local module = OverdoneServers:GetModule("os_menu")
+local OSMenu = module.Data
+
 local function CreateDebugEntryPanel(debugName, debugEntry, infoPaneText, width)
     local entryPanel = vgui.Create("DPanel")
     entryPanel:SetBackgroundColor(Color(0,50,0))
