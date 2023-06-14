@@ -1,6 +1,8 @@
 local module = OverdoneServers:GetModule("os_menu")
 local OSMenu = module.Data
 
+local DPanels2D = OverdoneServers:GetLibrary("2dvgui_extended")
+
 local transparent = 200 -- 0-255
 
 if (OSMenu.Menu) then
@@ -72,7 +74,7 @@ local function BuildMenu()
         draw.RoundedBox(0,0,headerSize,w,headerSeparatorSize,Color(255,255,255,transparent))
     end
 
-    local closeButton = OverdoneServers.DPanels2D:CloseButton(panel) -- TODO: Make visible. Possibly a library bug?
+    local closeButton = DPanels2D:CloseButton(panel) -- TODO: Make visible. Possibly a library bug?
     closeButton:SetSize(SizeY * 0.07)
     closeButton:SetScale(0.9)
     closeButton:SetPos(SizeX * 0.95 - closeButton:GetWide() * 0.5, SizeY * 0.05 - closeButton:GetTall() * 0.5)

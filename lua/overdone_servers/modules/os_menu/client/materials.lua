@@ -1,5 +1,8 @@
 local module = OverdoneServers:GetModule("os_menu")
 local OSMenu = module.Data
+
+local SVG = OverdoneServers:GetLibrary("svg_loader")
+
 local Materials = OSMenu.Materials or {}
 
 local svgToLoad = {
@@ -13,7 +16,7 @@ local svgToLoad = {
 
 local function CacheMats()
     for name,data in pairs(svgToLoad) do
-        OverdoneServers.SVG:GetMaterial(data, function(material)
+        SVG:GetMaterial(data, function(material)
             Materials[name] = material
         end)
     end
